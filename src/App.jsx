@@ -1,5 +1,5 @@
 
-function App() {
+export default function App() {
   return (
      <div className="container mt-5">
       <h1 className="text-primary">iNote funcionando com Bootstrap!</h1>
@@ -7,5 +7,3 @@ function App() {
     </div>
   )
 }
-
-export default App
