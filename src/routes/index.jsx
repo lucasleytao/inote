@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import App from '../App.jsx'
 
 export default function AppRoutes() {
   return (
@@ -6,8 +7,9 @@ export default function AppRoutes() {
       <Routes>
 
         {/* Auth */}
-        <Route path="/" element={<h1>Login</h1>} />
-        <Route path="/recuperar-senha" element={<h1>Recuperar Senha</h1>} />
+        {/* <Route path="/" element={<h1>Login</h1>} />
+        <Route path="/recuperar-senha" element={<h1>Recuperar Senha</h1>} /> */}
+        <Route path='/' element={<App />} />
 
         {/* Dashboard */}
         <Route path="/dashboard" element={<h1>Dashboard</h1>} />
@@ -26,6 +28,10 @@ export default function AppRoutes() {
         {/* Produtos */}
         <Route path="/produtos" element={<h1>Produtos</h1>} />
         <Route path="/produtos/novo" element={<h1>Novo Produto</h1>} />
+
+        {/* Pedidos */}
+        <Route path="/produtos" element={<h1>Pedidos</h1>} />
+        <Route path="/produtos/novo" element={<h1>Novo Pedido</h1>} />
 
         {/* Pagamentos */}
         <Route path="/pagamentos" element={<h1>Pagamentos</h1>} />
